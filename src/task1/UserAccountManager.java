@@ -9,7 +9,6 @@ public class UserAccountManager {
         Scanner scan = new Scanner(System.in);
         basicUserAccount.printMenu();
 
-
         Integer code = scan.nextInt();
         basicUserAccount.action(code);
 

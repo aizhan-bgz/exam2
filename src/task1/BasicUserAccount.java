@@ -3,14 +3,11 @@ package task1;
 import java.util.Scanner;
 
 public class BasicUserAccount implements UserAccount {
-    private String[] usernames;
-
-    private String[] passwordes;
+    private String[] usernames = new String[3];
+    private String[] passwordes = new String[3];
     private static Integer userNum;
 
     public BasicUserAccount() {
-        usernames = new String[3];
-        passwordes = new String[3];
     }
 
     public String[] getUsernames() {
@@ -34,7 +31,6 @@ public class BasicUserAccount implements UserAccount {
     @Override
     public void createAccount() {
         System.out.print("Введите имя пользователя: ");
-        scan.nextLine();
         String username = scan.nextLine();
         usernames[userNum] = username;
 
